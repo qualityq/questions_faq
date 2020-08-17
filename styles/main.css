@@ -24,7 +24,7 @@
 body {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
 
     color: var(--color-three);
@@ -47,10 +47,9 @@ body {
 /* Styling the section */
 .section-center {
     background: var(--second-color);
-    width: 100%;
+    width: auto;
 
     display: grid;
-    justify-items: self-end; /* solutions */
 }
 .title {
     padding-bottom: 2em;
@@ -58,6 +57,7 @@ body {
 .questions {
     display: flex;
     flex-direction: column;
+    width: max-content;
     /* Aligns text center */
     align-items: center;
 }
@@ -68,12 +68,6 @@ p {
 .question-btn {
     padding: 0.8em;
 }
-.p-one {
-    font-weight: 600;
-}
-.p-two {
-    font-weight: 200;
-}
 /* This puts button & question in one line */
 .question-title {
     display: inline-flex;
@@ -81,16 +75,27 @@ p {
 /* hide text */
 .question-text {
     display: none;
+    width: 0 auto;
+    font-size: 0.8em;
+    font-weight: 200;
 }
 .show-text .question-text {
     display: block;
+    width: 0 auto;
 }
 .minus-icon {
     display: none;
 }
-.show-text .minux-icon {
+.show-text .minus-icon {
     display: inline;
 }
 .show-text .plus-icon {
     display: none;
+}
+/* When clicking on a button, this is the style that expands */
+.question {
+    display: flex;
+    flex-direction: column;
+    width: 0 auto;
+    justify-self: self-end;
 }
