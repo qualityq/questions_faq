@@ -24,7 +24,7 @@
 body {
     display: flex;
     justify-content: center;
-    height: 50vh;
+    height: 100vh;
     align-items: center;
 
     color: var(--color-three);
@@ -58,6 +58,8 @@ body {
 .questions {
     display: flex;
     flex-direction: column;
+    /* Aligns text center */
+    align-items: center;
 }
 /* Add margins to all paragraphs */
 p {

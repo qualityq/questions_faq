@@ -5,6 +5,7 @@ const btns = document.querySelectorAll('.question-btn'); // Get all the buttons 
 
 btns.forEach(function(buttons){
     buttons.addEventListener('click', function(e){
-        console.log(e.currentTarget);
-    })
-})
+        const question = e.currentTarget.parentElement.parentElement;
+        question.classList.toggle('show-text');
+    });
+});
