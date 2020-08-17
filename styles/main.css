@@ -6,6 +6,7 @@
     box-shadow: none;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 :root {
     font-family: 'Alata', sans-serif;
@@ -45,7 +46,10 @@ body {
 /* Styling the section */
 .section-center {
     background: var(--second-color);
-    width: 80%;
+    width: 100%;
+
+    display: grid;
+    justify-items: self-end; /* solutions */
 }
 .title {
     padding-bottom: 2em;
@@ -53,7 +57,6 @@ body {
 .questions {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 /* Add margins to all paragraphs */
 p {
