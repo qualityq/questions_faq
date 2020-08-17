@@ -39,6 +39,7 @@ body {
 }
 .question-btn::part(base):hover {
     transform: scale(0.98, 0.98);
+    transform: rotate(3deg);
 }
 .question-btn::part(base):active {
     transform: scale(1.02, 1.02);
