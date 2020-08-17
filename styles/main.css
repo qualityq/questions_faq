@@ -19,7 +19,7 @@
 
     background-color: var(--main-color);
 }
-
+/* Center everything in the body */
 body {
     display: flex;
     justify-content: center;
@@ -37,7 +37,10 @@ body {
     color: var(--color-three);
 }
 .question-btn::part(base):hover {
-    transform: scale(0.96, 0.96);
+    transform: scale(0.98, 0.98);
+}
+.question-btn::part(base):active {
+    transform: scale(1.02, 1.02);
 }
 /* Styling the section */
 .section-center {
@@ -52,6 +55,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+/* Add margins to all paragraphs */
 p {
     padding: 0.8em;
 }
@@ -67,4 +71,20 @@ p {
 /* This puts button & question in one line */
 .question-title {
     display: inline-flex;
+}
+/* hide text */
+.question-text {
+    display: none;
+}
+.show-text .question-text {
+    display: block;
+}
+.minus-icon {
+    display: none;
+}
+.show-text .minux-icon {
+    display: inline;
+}
+.show-text .plus-icon {
+    display: none;
 }
