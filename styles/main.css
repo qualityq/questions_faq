@@ -1,103 +1,103 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    text-decoration-style: none;
-    box-shadow: none;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 :root {
-    font-family: 'Alata', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    --main-color: #353535;
-    --second-color: #3c6e71;
+  font-family: "Alata", sans-serif;
+  font-family: "Poppins", sans-serif;
+  --main-color: #353535;
+  --second-color: #3c6e71;
 
-    --color-three: #ffffff;
-    --color-four: #d9d9d9;
-    --color-five: #284b63;
+  --color-three: #ffffff;
+  --color-four: #d9d9d9;
+  --color-five: #284b63;
 
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 /* Center everything in the body */
 body {
-    display: flex;
-    justify-content: center;
-    height: 80vh;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
 
-    color: var(--color-three);
-    --sl-color-primary-hue: 30;
-    -sl-color-primary-saturation: 90%;
+  color: var(--color-three);
+  --sl-color-primary-hue: 30;
+  -sl-color-primary-saturation: 90%;
 }
 /* Styling the button */
 .question-btn::part(base) {
-    background: var(--color-five);
-    border-style: none;
-    color: var(--color-three);
+  background: var(--color-five);
+  border-style: none;
+  color: var(--color-three);
 }
 .question-btn::part(base):hover {
-    transform: scale(0.98, 0.98);
-    color: cadetblue;
+  transform: scale(0.98, 0.98);
+  color: cadetblue;
 }
 .question-btn::part(base):active {
-    transform: scale(1.02, 1.02);
+  transform: scale(1.02, 1.02);
 }
 /* Styling the section */
 .section-center {
-    background: var(--second-color);
-    width: auto;
+  background: var(--second-color);
+  width: auto;
 
-    display: grid;
+  display: grid;
 }
 .title {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 .questions {
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-    /* Aligns text center */
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  /* Aligns text center */
+  align-items: center;
 }
 /* Add margins to all paragraphs */
 p {
-    padding: 0.8em;
+  padding: 0.8em;
 }
 .question-btn {
-    padding: 0.8em;
+  padding: 0.8em;
 }
 /* This puts button & question in one line */
 .question-title {
-    display: inline-flex;
+  display: inline-flex;
 }
 /* hide text */
 .question-text {
-    display: none;
-    width: 0 auto;
-    font-size: 0.8em;
-    font-weight: 200;
-    border: 1px solid var(--color-four);
-    margin: 1em;
+  display: none;
+  width: 0 auto;
+  font-size: 0.8em;
+  font-weight: 200;
+  border: 1px solid var(--color-four);
+  margin: 1em;
 }
 .show-text .question-text {
-    display: block;
-    width: 0 auto;
+  display: block;
+  width: 0 auto;
 }
 .minus-icon {
-    display: none;
+  display: none;
 }
 .show-text .minus-icon {
-    display: inline;
+  display: inline;
 }
 .show-text .plus-icon {
-    display: none;
+  display: none;
 }
 /* When clicking on a button, this is the style that expands */
 .question {
-    display: flex;
-    flex-direction: column;
-    width: 0 auto;
-    justify-self: self-end;
+  display: flex;
+  flex-direction: column;
+  width: 0 auto;
+  justify-self: self-end;
 }
