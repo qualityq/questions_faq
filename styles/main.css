@@ -103,3 +103,16 @@ p {
   width: 0 auto;
   justify-self: self-end;
 }
+/* Styling the footer */
+.main_footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
